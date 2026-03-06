@@ -326,14 +326,14 @@ Potential future enhancements include:
 - Integration with IoT water quality sensors
 
 ---
-# Team Members
+## Team Members
 
-| Name | Contribution |
-|-----|-------------|
-| Tarif Bin Mehedi | AI Model Development |
-| Sabiha Binte Siraj | Backend & Database |
-| Zahin Al Mahmud | System Integration & AI Advisory System |
-| Abdullah Al Maruf Ovi | Mobile Application Development |
+| Name |
+|------|
+| Tarif Bin Mehedi |
+| Sabiha Binte Siraj |
+| Zahin Al Mahmud |
+| Abdullah Al Maruf Ovi |
 
 ---
 
