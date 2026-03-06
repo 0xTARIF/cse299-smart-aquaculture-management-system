@@ -1,8 +1,26 @@
+# CSE 299 - Junior Design Course
+**North South University**  
+**Faculty:** Mr. Intisar Tahmid Naheen [ITN]
+
+---
+
+# Group Number 2  
 # Smart Aquaculture Management System
 
 ### AI-Based Fish Disease Detection for Bangladesh
 
 An **AI-powered mobile application** designed to help aquaculture farmers detect fish diseases quickly using smartphone images. The system uses **computer vision and deep learning** to identify fish and shrimp diseases and provides treatment guidance, disease tracking, and farm management tools.
+
+---
+
+## Project Team Members
+
+| Name | Student ID |
+|------|------------|
+| Tarif Bin Mehedi | 2221265042 |
+| Sabiha Binte Siraj | 2222633042 |
+| Zahin Al Mahmud | 2323770642 |
+| Abdullah Al Maruf Ovi | 2221485642 |
 
 ---
 
@@ -22,7 +40,6 @@ An **AI-powered mobile application** designed to help aquaculture farmers detect
 - Expected Outcomes
 - Project Timeline
 - Future Improvements
-- Team Members
 - References
 - License
 
@@ -324,16 +341,6 @@ Potential future enhancements include:
 - Real-time farm analytics
 - Multilingual farmer interface
 - Integration with IoT water quality sensors
-
----
-## Team Members
-
-| Name | Student ID |
-|------|------------|
-| Tarif Bin Mehedi | 2221265042 |
-| Sabiha Binte Siraj | 2222633042 |
-| Zahin Al Mahmud | 2323770642 |
-| Abdullah Al Maruf Ovi | 2221485642 |
 
 ---
 
