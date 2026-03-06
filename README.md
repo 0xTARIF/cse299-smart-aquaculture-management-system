@@ -21,8 +21,8 @@ An **AI-powered mobile application** designed to help aquaculture farmers detect
 - Technology Stack
 - Expected Outcomes
 - Project Timeline
-- Project Structure
 - Future Improvements
+- Team Members
 - References
 - License
 
@@ -314,24 +314,6 @@ The system aims to achieve:
 
 ---
 
-# Project Structure
-
-Smart-Aquaculture-Management-System
-│
-├── dataset
-├── ml-model
-│ ├── training
-│ ├── preprocessing
-│ └── evaluation
-│
-├── mobile-app
-├── backend
-├── docs
-└── README.md
-
-
----
-
 # Future Improvements
 
 Potential future enhancements include:
@@ -342,6 +324,16 @@ Potential future enhancements include:
 - Real-time farm analytics
 - Multilingual farmer interface
 - Integration with IoT water quality sensors
+
+---
+# Team Members
+
+| Name | Contribution |
+|-----|-------------|
+| Tarif Bin Mehedi | AI Model Development |
+| Sabiha Binte Siraj | Backend & Database |
+| Zahin Al Mahmud | System Integration & AI Advisory System |
+| Abdullah Al Maruf Ovi | Mobile Application Development |
 
 ---
 
