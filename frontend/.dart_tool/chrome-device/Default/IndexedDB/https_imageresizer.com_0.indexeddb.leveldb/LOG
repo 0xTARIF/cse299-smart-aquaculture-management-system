@@ -1,0 +1,6 @@
+2026/04/15-14:01:51.760 3abc Creating DB C:\Users\TARIFB~1\AppData\Local\Temp\flutter_tools.5899408\flutter_tools_chrome_device.5441d978\Default\IndexedDB\https_imageresizer.com_0.indexeddb.leveldb since it was missing.
+2026/04/15-14:01:51.766 3abc Reusing MANIFEST C:\Users\TARIFB~1\AppData\Local\Temp\flutter_tools.5899408\flutter_tools_chrome_device.5441d978\Default\IndexedDB\https_imageresizer.com_0.indexeddb.leveldb/MANIFEST-000001
+2026/04/15-14:01:51.773 3abc Level-0 table #5: started
+2026/04/15-14:01:51.775 3abc Level-0 table #5: 1962 bytes OK
+2026/04/15-14:01:51.777 3abc Delete type=0 #3
+2026/04/15-14:01:51.777 3abc Manual compaction at level-0 from '\x00\x02\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00\x03\x00\x00\x00' @ 0 : 0; will stop at (end)
