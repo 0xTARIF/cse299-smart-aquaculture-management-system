@@ -1,14 +1,13 @@
 Folder PATH listing for volume SSD 2
 Volume serial number is FA53-D6EA
 E:.
-¦   structure.txt
+¦   LICENSE
+¦   README.md
+¦   Structure.txt
 ¦   
-+---.vscode
-¦       settings.json
-¦       
 +---backend
 ¦   ¦   .env
-¦   ¦   .gitignore
+¦   ¦   .gitignoreTEMP
 ¦   ¦   requirements.txt
 ¦   ¦   
 ¦   +---app
@@ -138,11 +137,15 @@ E:.
     ¦   ¦       ¦       
     ¦   ¦       +---blob_storage
     ¦   ¦       ¦   +---25e5328c-b99c-4af7-8d01-d29f7abbd71f
+    ¦   ¦       ¦   +---2900c1b1-c9c7-4dfe-8bbb-b73a8b85a218
+    ¦   ¦       ¦   +---424afd58-4b04-4dbf-be68-dfbe8563e8cd
     ¦   ¦       ¦   +---5bdda20d-5b0a-47ed-87c1-4bfa8b6e37f8
     ¦   ¦       ¦   +---5e31c737-2abd-45cd-b096-485e09caa657
     ¦   ¦       ¦   +---7b81cc06-71de-4379-86d0-dbc9c76c2ff9
     ¦   ¦       ¦   +---7bd1b8bc-e488-4d4a-9f27-93103187a492
     ¦   ¦       ¦   +---7c12f214-4ef1-4099-8295-1c1a949cf6eb
+    ¦   ¦       ¦   +---80ebb3fe-6b0e-46da-8403-af7266cdc6a2
+    ¦   ¦       ¦   +---90beb8e1-5b1a-41d1-b154-64552f55920a
     ¦   ¦       ¦   +---a5c290e3-a513-4bc8-be83-cc60e34636c1
     ¦   ¦       ¦   +---a7a31a36-cb76-46fa-b22e-d99590874af0
     ¦   ¦       ¦   +---c339daa3-3f18-49cf-ae2e-56cbe9b78381
@@ -326,6 +329,8 @@ E:.
     ¦   ¦       ¦               
     ¦   ¦       +---Session Storage
     ¦   ¦       ¦       000003.log
+    ¦   ¦       ¦       000004.log
+    ¦   ¦       ¦       000005.ldb
     ¦   ¦       ¦       CURRENT
     ¦   ¦       ¦       LOCK
     ¦   ¦       ¦       LOG
@@ -346,6 +351,10 @@ E:.
     ¦   ¦       ¦       Session_13420715910787653
     ¦   ¦       ¦       Session_13420716105414152
     ¦   ¦       ¦       Session_13420718788693323
+    ¦   ¦       ¦       Session_13420728640977730
+    ¦   ¦       ¦       Session_13420734107170721
+    ¦   ¦       ¦       Session_13420734213975786
+    ¦   ¦       ¦       Session_13420734788964412
     ¦   ¦       ¦       Tabs_13420706267849982
     ¦   ¦       ¦       Tabs_13420706290373927
     ¦   ¦       ¦       Tabs_13420710828074600
@@ -359,6 +368,10 @@ E:.
     ¦   ¦       ¦       Tabs_13420715910886868
     ¦   ¦       ¦       Tabs_13420716105505629
     ¦   ¦       ¦       Tabs_13420718788806346
+    ¦   ¦       ¦       Tabs_13420728641092744
+    ¦   ¦       ¦       Tabs_13420734107281519
+    ¦   ¦       ¦       Tabs_13420734214106343
+    ¦   ¦       ¦       Tabs_13420734789108872
     ¦   ¦       ¦       
     ¦   ¦       +---Shared Dictionary
     ¦   ¦       ¦   ¦   db
@@ -379,6 +392,8 @@ E:.
     ¦   ¦       ¦   ¦   000005.ldb
     ¦   ¦       ¦   ¦   000007.log
     ¦   ¦       ¦   ¦   000008.ldb
+    ¦   ¦       ¦   ¦   000010.log
+    ¦   ¦       ¦   ¦   000011.ldb
     ¦   ¦       ¦   ¦   CURRENT
     ¦   ¦       ¦   ¦   LOCK
     ¦   ¦       ¦   ¦   LOG
