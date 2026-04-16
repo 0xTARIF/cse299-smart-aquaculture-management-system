@@ -27,14 +27,23 @@ class _SplashScreenState extends State<SplashScreen> {
 
     // get saved value (default = false)
     bool seenOnboarding = prefs.getBool('seenOnboarding') ?? false;
-
-    if (seenOnboarding) {
+    bool isLoggedIn = prefs.getBool('isLoggedIn') ?? false;
+    if (isLoggedIn) {
+      /// GO DIRECTLY TO HOME
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(
+          builder: (_) =>
+              const Scaffold(body: Center(child: Text("HOME SCREEN"))),
+        ),
+      );
+    } else if (seenOnboarding) {
       // Go to Home
       Navigator.pushReplacement(
         context,
         PageRouteBuilder(
-          pageBuilder: (_, __, ___) => const LoginScreen(),
-          transitionsBuilder: (_, animation, __, child) {
+          pageBuilder: (_, _, _) => const LoginScreen(),
+          transitionsBuilder: (_, animation, _, child) {
             return SlideTransition(
               position: Tween(
                 begin: const Offset(1.0, 0.0),

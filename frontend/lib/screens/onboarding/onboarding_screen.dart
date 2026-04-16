@@ -39,8 +39,8 @@ class _OnboardingScreenState extends State<OnboardingScreen> {
     Navigator.pushReplacement(
       context,
       PageRouteBuilder(
-        pageBuilder: (_, __, ___) => const LoginScreen(),
-        transitionsBuilder: (_, animation, __, child) {
+        pageBuilder: (_, _, _) => const LoginScreen(),
+        transitionsBuilder: (_, animation, _, child) {
           return SlideTransition(
             position: Tween(
               begin: const Offset(1.0, 0.0),
