@@ -1,4 +1,9 @@
 import 'package:flutter/material.dart';
+import 'signup_screen.dart';
+import '../../services/api_service.dart';
+import 'package:shared_preferences/shared_preferences.dart';
+//import '../home/home_screen.dart';
+import '../main/main_screen.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -12,6 +17,43 @@ class _LoginScreenState extends State<LoginScreen> {
   final TextEditingController passwordController = TextEditingController();
 
   bool obscurePassword = true;
+
+  void handleLogin() async {
+    String email = emailController.text.trim();
+    String password = passwordController.text.trim();
+
+    if (email.isEmpty || password.isEmpty) {
+      ScaffoldMessenger.of(
+        context,
+      ).showSnackBar(const SnackBar(content: Text("সব ঘর পূরণ করুন")));
+      return;
+    }
+
+    final user = await ApiService.login(email, password);
+
+    if (user != null && user['id'] != null) {
+      final prefs = await SharedPreferences.getInstance();
+
+      await prefs.setBool('isLoggedIn', true);
+
+      // SAFE SAVE
+      await prefs.setString('userId', user['id'].toString());
+      await prefs.setString('userName', user['name'] ?? "User");
+
+      ScaffoldMessenger.of(
+        context,
+      ).showSnackBar(const SnackBar(content: Text("লগইন সফল")));
+
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(builder: (_) => const MainScreen()),
+      );
+    } else {
+      ScaffoldMessenger.of(
+        context,
+      ).showSnackBar(const SnackBar(content: Text("ইমেইল বা পাসওয়ার্ড ভুল")));
+    }
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -148,10 +190,7 @@ class _LoginScreenState extends State<LoginScreen> {
                       width: double.infinity,
                       height: 50,
                       child: ElevatedButton(
-                        onPressed: () {
-                          print(emailController.text);
-                          print(passwordController.text);
-                        },
+                        onPressed: handleLogin,
                         style: ElevatedButton.styleFrom(
                           backgroundColor: const Color(0xFF0D3B5C),
                           shape: RoundedRectangleBorder(
@@ -192,7 +231,21 @@ class _LoginScreenState extends State<LoginScreen> {
                       height: 45,
                       child: ElevatedButton(
                         onPressed: () {
-                          // navigate later
+                          Navigator.push(
+                            context,
+                            PageRouteBuilder(
+                              pageBuilder: (_, _, _) => const SignupScreen(),
+                              transitionsBuilder: (_, animation, _, child) {
+                                return SlideTransition(
+                                  position: Tween(
+                                    begin: const Offset(1.0, 0.0),
+                                    end: Offset.zero,
+                                  ).animate(animation),
+                                  child: child,
+                                );
+                              },
+                            ),
+                          );
                         },
                         style: ElevatedButton.styleFrom(
                           backgroundColor: const Color(0xFFD6E2E1),

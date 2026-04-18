@@ -3,6 +3,9 @@ import 'package:shared_preferences/shared_preferences.dart';
 
 import '../onboarding/onboarding_screen.dart';
 import '../auth/login_screen.dart';
+//import '../home/home_screen.dart';
+
+import '../main/main_screen.dart';
 
 class SplashScreen extends StatefulWidget {
   const SplashScreen({super.key});
@@ -25,16 +28,22 @@ class _SplashScreenState extends State<SplashScreen> {
 
     final prefs = await SharedPreferences.getInstance();
 
-    // get saved value (default = false)
     bool seenOnboarding = prefs.getBool('seenOnboarding') ?? false;
+    bool isLoggedIn = prefs.getBool('isLoggedIn') ?? false;
 
-    if (seenOnboarding) {
-      // Go to Home
+    if (!mounted) return;
+
+    if (isLoggedIn) {
+      Navigator.pushReplacement(
+        context,
+        MaterialPageRoute(builder: (_) => const MainScreen()), // ✅ CHANGED
+      );
+    } else if (seenOnboarding) {
       Navigator.pushReplacement(
         context,
         PageRouteBuilder(
-          pageBuilder: (_, __, ___) => const LoginScreen(),
-          transitionsBuilder: (_, animation, __, child) {
+          pageBuilder: (_, _, _) => const LoginScreen(),
+          transitionsBuilder: (_, animation, _, child) {
             return SlideTransition(
               position: Tween(
                 begin: const Offset(1.0, 0.0),
@@ -46,7 +55,6 @@ class _SplashScreenState extends State<SplashScreen> {
         ),
       );
     } else {
-      // Go to Onboarding
       Navigator.pushReplacement(
         context,
         MaterialPageRoute(builder: (context) => const OnboardingScreen()),

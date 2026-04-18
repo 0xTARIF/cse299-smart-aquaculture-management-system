@@ -68,6 +68,12 @@
       "languageVersion": "3.8"
     },
     {
+      "name": "flutter_riverpod",
+      "rootUri": "file:///C:/Users/Tarif%20Bin%20Mehedi/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_riverpod-2.6.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
       "name": "flutter_test",
       "rootUri": "file:///E:/Softwares/Installed/flutter/packages/flutter_test",
       "packageUri": "lib/",
@@ -78,6 +84,18 @@
       "rootUri": "file:///E:/Softwares/Installed/flutter/packages/flutter_web_plugins",
       "packageUri": "lib/",
       "languageVersion": "3.9"
+    },
+    {
+      "name": "http",
+      "rootUri": "file:///C:/Users/Tarif%20Bin%20Mehedi/AppData/Local/Pub/Cache/hosted/pub.dev/http-1.6.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.4"
+    },
+    {
+      "name": "http_parser",
+      "rootUri": "file:///C:/Users/Tarif%20Bin%20Mehedi/AppData/Local/Pub/Cache/hosted/pub.dev/http_parser-4.1.2",
+      "packageUri": "lib/",
+      "languageVersion": "3.4"
     },
     {
       "name": "leak_tracker",
@@ -158,6 +176,12 @@
       "languageVersion": "3.0"
     },
     {
+      "name": "riverpod",
+      "rootUri": "file:///C:/Users/Tarif%20Bin%20Mehedi/AppData/Local/Pub/Cache/hosted/pub.dev/riverpod-2.6.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
       "name": "shared_preferences",
       "rootUri": "file:///C:/Users/Tarif%20Bin%20Mehedi/AppData/Local/Pub/Cache/hosted/pub.dev/shared_preferences-2.5.5",
       "packageUri": "lib/",
@@ -218,6 +242,12 @@
       "languageVersion": "3.4"
     },
     {
+      "name": "state_notifier",
+      "rootUri": "file:///C:/Users/Tarif%20Bin%20Mehedi/AppData/Local/Pub/Cache/hosted/pub.dev/state_notifier-1.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "stream_channel",
       "rootUri": "file:///C:/Users/Tarif%20Bin%20Mehedi/AppData/Local/Pub/Cache/hosted/pub.dev/stream_channel-2.1.4",
       "packageUri": "lib/",
@@ -240,6 +270,12 @@
       "rootUri": "file:///C:/Users/Tarif%20Bin%20Mehedi/AppData/Local/Pub/Cache/hosted/pub.dev/test_api-0.7.10",
       "packageUri": "lib/",
       "languageVersion": "3.7"
+    },
+    {
+      "name": "typed_data",
+      "rootUri": "file:///C:/Users/Tarif%20Bin%20Mehedi/AppData/Local/Pub/Cache/hosted/pub.dev/typed_data-1.4.0",
+      "packageUri": "lib/",
+      "languageVersion": "3.5"
     },
     {
       "name": "vector_math",
