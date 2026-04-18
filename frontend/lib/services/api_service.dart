@@ -40,19 +40,34 @@ class ApiService {
         jsonDecode(response.body)["message"] != null;
   }
 
-  static Future<bool> login(String email, String password) async {
+  static Future<Map<String, dynamic>?> login(
+    String email,
+    String password,
+  ) async {
     final response = await http.post(
       Uri.parse("$baseUrl/auth/login"),
       headers: {"Content-Type": "application/json"},
       body: jsonEncode({"email": email, "password": password}),
     );
 
-    final data = jsonDecode(response.body);
+    if (response.statusCode == 200) {
+      final data = jsonDecode(response.body);
 
-    if (response.statusCode == 200 && data["message"] != null) {
-      return true;
+      return data; // return full user object
     } else {
-      return false;
+      return null;
+    }
+  }
+
+  Future<List<dynamic>> getFarms(String userId) async {
+    final response = await http.get(
+      Uri.parse('$baseUrl/farms?user_id=$userId'),
+    );
+
+    if (response.statusCode == 200) {
+      return jsonDecode(response.body);
+    } else {
+      throw Exception('Failed to load farms');
     }
   }
 }

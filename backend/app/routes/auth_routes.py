@@ -95,4 +95,8 @@ def login(data: LoginRequest, db: Session = Depends(get_db)):
     if not verify_password(data.password, user.password):
         return {"error": "Invalid password"}
 
-    return {"message": "Login successful"}
+    return {
+        "id": user.id,
+        "name": user.name,
+        "email": user.email
+    }

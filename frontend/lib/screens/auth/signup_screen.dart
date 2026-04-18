@@ -50,9 +50,9 @@ class _SignupScreenState extends State<SignupScreen> {
       Navigator.push(
         context,
         PageRouteBuilder(
-          pageBuilder: (_, __, ___) =>
+          pageBuilder: (_, _, _) =>
               OtpScreen(name: name, email: email, password: password),
-          transitionsBuilder: (_, animation, __, child) {
+          transitionsBuilder: (_, animation, _, child) {
             return SlideTransition(
               position: Tween(
                 begin: const Offset(1.0, 0.0),

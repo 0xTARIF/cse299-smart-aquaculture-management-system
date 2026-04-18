@@ -1,4 +1,4 @@
-from sqlalchemy import Column, String
+from sqlalchemy import Column, Integer, String
 from app.db.database import Base
 import uuid
 
@@ -10,3 +10,6 @@ class User(Base):
     name = Column(String, nullable=False)
     email = Column(String, unique=True, nullable=False)
     password = Column(String, nullable=False)
+    phone = Column(String, nullable=True)
+    about = Column(String, nullable=True)
+    experience = Column(Integer, nullable=True)

@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'signup_screen.dart';
 import '../../services/api_service.dart';
 import 'package:shared_preferences/shared_preferences.dart';
+//import '../home/home_screen.dart';
+import '../main/main_screen.dart';
 
 class LoginScreen extends StatefulWidget {
   const LoginScreen({super.key});
@@ -27,11 +29,16 @@ class _LoginScreenState extends State<LoginScreen> {
       return;
     }
 
-    bool success = await ApiService.login(email, password);
+    final user = await ApiService.login(email, password);
 
-    if (success) {
+    if (user != null && user['id'] != null) {
       final prefs = await SharedPreferences.getInstance();
+
       await prefs.setBool('isLoggedIn', true);
+
+      // SAFE SAVE
+      await prefs.setString('userId', user['id'].toString());
+      await prefs.setString('userName', user['name'] ?? "User");
 
       ScaffoldMessenger.of(
         context,
@@ -39,10 +46,7 @@ class _LoginScreenState extends State<LoginScreen> {
 
       Navigator.pushReplacement(
         context,
-        MaterialPageRoute(
-          builder: (_) =>
-              const Scaffold(body: Center(child: Text("HOME SCREEN"))),
-        ),
+        MaterialPageRoute(builder: (_) => const MainScreen()),
       );
     } else {
       ScaffoldMessenger.of(
@@ -230,8 +234,8 @@ class _LoginScreenState extends State<LoginScreen> {
                           Navigator.push(
                             context,
                             PageRouteBuilder(
-                              pageBuilder: (_, __, ___) => const SignupScreen(),
-                              transitionsBuilder: (_, animation, __, child) {
+                              pageBuilder: (_, _, _) => const SignupScreen(),
+                              transitionsBuilder: (_, animation, _, child) {
                                 return SlideTransition(
                                   position: Tween(
                                     begin: const Offset(1.0, 0.0),

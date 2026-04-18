@@ -68,6 +68,12 @@
       "languageVersion": "3.8"
     },
     {
+      "name": "flutter_riverpod",
+      "rootUri": "file:///C:/Users/Tarif%20Bin%20Mehedi/AppData/Local/Pub/Cache/hosted/pub.dev/flutter_riverpod-2.6.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
       "name": "flutter_test",
       "rootUri": "file:///E:/Softwares/Installed/flutter/packages/flutter_test",
       "packageUri": "lib/",
@@ -81,9 +87,9 @@
     },
     {
       "name": "http",
-      "rootUri": "file:///C:/Users/Tarif%20Bin%20Mehedi/AppData/Local/Pub/Cache/hosted/pub.dev/http-0.13.6",
+      "rootUri": "file:///C:/Users/Tarif%20Bin%20Mehedi/AppData/Local/Pub/Cache/hosted/pub.dev/http-1.6.0",
       "packageUri": "lib/",
-      "languageVersion": "2.19"
+      "languageVersion": "3.4"
     },
     {
       "name": "http_parser",
@@ -170,6 +176,12 @@
       "languageVersion": "3.0"
     },
     {
+      "name": "riverpod",
+      "rootUri": "file:///C:/Users/Tarif%20Bin%20Mehedi/AppData/Local/Pub/Cache/hosted/pub.dev/riverpod-2.6.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
       "name": "shared_preferences",
       "rootUri": "file:///C:/Users/Tarif%20Bin%20Mehedi/AppData/Local/Pub/Cache/hosted/pub.dev/shared_preferences-2.5.5",
       "packageUri": "lib/",
@@ -228,6 +240,12 @@
       "rootUri": "file:///C:/Users/Tarif%20Bin%20Mehedi/AppData/Local/Pub/Cache/hosted/pub.dev/stack_trace-1.12.1",
       "packageUri": "lib/",
       "languageVersion": "3.4"
+    },
+    {
+      "name": "state_notifier",
+      "rootUri": "file:///C:/Users/Tarif%20Bin%20Mehedi/AppData/Local/Pub/Cache/hosted/pub.dev/state_notifier-1.0.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
     },
     {
       "name": "stream_channel",
